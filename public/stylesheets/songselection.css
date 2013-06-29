@@ -22,10 +22,11 @@
  }
  .navbar {
    height: 60px;
+   background:#E0E0E0;
  }
  .navbar .navbar-inner {
    border: none;
-   background: rgba(236, 240, 241, 0.960784);
+   background-color: #efefef;
    height: 60px;
    padding-left: 20px;
    padding-right: 20px;

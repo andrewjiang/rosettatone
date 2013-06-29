@@ -24,16 +24,17 @@ body {
   top: 0px;
   left: 0px;
 }
-.navbar {
-  height: 60px;
-}
-.navbar .navbar-inner {
-  border: none;
-  background: rgba(236, 240, 241, 0.960784);
-  height: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+ .navbar {
+   height: 60px;
+   background:#E0E0E0;
+ }
+ .navbar .navbar-inner {
+   border: none;
+   background-color: #efefef;
+   height: 60px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
 .navbar .navbar-inner .brand {
   font-family:"oswald";
   font-weight: bold;

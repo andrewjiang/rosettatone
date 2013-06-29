@@ -11,7 +11,10 @@ var site = {
     						preferredQuality: "default"// preferred quality: default, small, medium, large, hd720
 						});
 		site.getReady(lang1,lang2);
-		site.pauseHandler();		 
+		site.pauseHandler();		
+		site.callAPI("artist","enrique iglesias").done(function(data){
+			console.log(data);
+		}); 
 	},
 
 	getReady : function(lang1, lang2){

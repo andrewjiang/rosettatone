@@ -1,0 +1,86 @@
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .image {
+   width: 0px;
+   height: 0px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+ }
+ .navbar {
+   height: 60px;
+ }
+ .navbar .navbar-inner {
+   border: none;
+   background: rgba(236, 240, 241, 0.960784);
+   height: 60px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ .navbar .navbar-inner .brand {
+   font-family:"oswald";
+   font-weight: bold;
+   font-size: 24px;
+   color: #333333;
+   line-height: 40px;
+ }
+ .navbar .navbar-inner .brand span {
+   color: #e74c3c;
+ }
+ .navbar .navbar-inner .nav li a {
+   line-height: 40px;
+ }
+ .container .heading {
+   margin: 10px 10px 30px 10px;
+   background: transparent;
+   font-family:"helvetica";
+   font-weight: normal;
+   text-align: center;
+   color: #5d5d5d;
+   font-size: 36px;
+   padding: 20px 20px 10px 20px;
+ }
+ .container.container-1 {
+   border: 1px dotted #858585;
+   padding: 10px;
+   background: rgba(215, 215, 215, 0.0901961);
+   border-radius: 8px;
+   width: 878px;
+ }
+ .container.container-2 {
+   margin-bottom: 20px;
+ }
+ .container-1.container-2 .row-fluid .span3 .image {
+   height: 200px;
+   width: 200px;
+ }
+ .container-1.container-2 .row-fluid .span8 .label-success {
+   padding: 6px 20px 6px 20px;
+ }
+ .container-1.container-2 .row-fluid .span8 .label-success.label-success-1 {
+   background: #2ecc71;
+ }
+ .container-1.container-2 .row-fluid .span8 .label-success.label-success-2 {
+   background: #f39c12;
+ }
+ .container-1 .row-fluid .span3 .image.image-1 {
+   height: 200px;
+   width: 200px;
+ }
+ .container-1 .row-fluid .span8 .label-success.label-success-3 {
+   padding: 6px 20px 6px 20px;
+   background: #c0392b;
+ }

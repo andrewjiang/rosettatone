@@ -1,0 +1,155 @@
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .image {
+   width: 0px;
+   height: 0px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+ }
+ .navbar {
+   height: 60px;
+ }
+ .navbar .navbar-inner {
+   border: none;
+   background: rgba(236, 240, 241, 0.960784);
+   height: 60px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ .navbar .navbar-inner .brand {
+   font-family:"oswald";
+   font-weight: bold;
+   font-size: 24px;
+   color: #333333;
+   line-height: 40px;
+ }
+ .navbar .navbar-inner .brand span {
+   color: #e74c3c;
+ }
+ .navbar .navbar-inner .nav li a {
+   line-height: 40px;
+ }
+ .container{
+   margin-top:20px;
+ }
+ .container .row-fluid.row-fluid-1 {
+   margin: 0px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid {
+   background-size: cover;
+   height: 300px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-1 {
+   background: transparent url(../assets/img/lang/langEnglish.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-1 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-1 .well .row-fluid .span6 .heading {
+   text-align: center;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-2 {
+   background: transparent url(../assets/img/lang/langFrench.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-2 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-2 .well .row-fluid .span6 .heading {
+   text-align: center;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-3 {
+   background: transparent url(../assets/img/lang/langGerman.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-3 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-3 .well .row-fluid .span6 .heading {
+   text-align: center;
+ }
+ .container .heading {
+   text-align: center;
+ }
+ .container .heading.heading-1 {
+   font-family:"arial";
+   font-weight: normal;
+   font-size: 48px;
+   color: #2c3e50;
+   margin: 10px 0px 20px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-4 {
+   background: transparent url(../assets/img/lang/langSpanish.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-4 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-5 {
+   background: transparent url(../assets/img/lang/langRussian.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-5 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ .container .row-fluid-1 .span4 .container-fluid.container-fluid-6 {
+   background: transparent url(../assets/img/lang/langItalian.jpg) no-repeat 0px 0px;
+   background-size: 100%;
+ }
+ .container .row-fluid-1 .span4 .container-fluid-6 .well {
+   background: rgba(245, 245, 245, 0.580392);
+   margin: 140px 0px 0px 0px;
+ }
+ #your1{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+  #your2{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+  #your3{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+  #your4{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+  #your5{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+  #your6{
+   margin-left:0px;
+   border: 4px solid #e0e0e0;
+ }
+#question{
+  font-family:"Droid Sans";
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+  color: #34495e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

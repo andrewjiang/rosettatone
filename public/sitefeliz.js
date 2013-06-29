@@ -71,7 +71,7 @@ var site = {
 			timer1 = new site.Timer(function(){
 				$("#" + divId).html(array[1][i]);
 				i++;
-				if (i < array[1].length){displayLoop();}
+				if (i < array[1].length){displayLoop();} 
 			}, getTimeout(i));}
 
 		displayLoop();
@@ -79,7 +79,7 @@ var site = {
 
 		displayLang2Array: function(array, divId){
 
-		getTimeout = function(i){
+	getTimeout = function(i){
 			if (i == 0){
 				thedelay = array[0][i] * 1000;
 				} else {
@@ -90,10 +90,10 @@ var site = {
 
 		var i = 0;
 		function displayLoop() {
-			timer2 = new site.Timer(function(){
-				$("#" + divId).html(array[1][i]).fade(500);
+			timer1 = new site.Timer(function(){
+				$("#" + divId).html(array[1][i]);
 				i++;
-				if (i < array[1].length){displayLoop();}
+				if (i < array[1].length){displayLoop();} 
 			}, getTimeout(i));}
 
 		displayLoop();

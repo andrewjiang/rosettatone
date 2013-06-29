@@ -14,6 +14,7 @@ app.get('/yourlang',routes.yourlang);
 app.get('/newlang',routes.newlang);
 app.get('/songselection',routes.songselection);
 app.get('/karaoke-hero', routes.karaokehero);
+app.get('/songselectionCH', routes.songselectionCH);
 
 app.listen(3001);
 

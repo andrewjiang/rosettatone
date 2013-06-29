@@ -12,6 +12,10 @@ exports.newlang = function(req,res){
 	res.render('newlang');
 }
 
+exports.songselectionCH = function(req,res){
+	res.render('songselectionCH');
+}
+
 exports.songselection = function(req,res){
 	res.render('songselection');
 }

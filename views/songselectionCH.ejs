@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/songselection.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../sidr/stylesheets/jquery.sidr.dark.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="../sidr/jquery.sidr.min.js"></script>
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+    <title>SongSelection</title>
+  </head>
+  
+  <body>
+        <a id="simple-menu" href="#sidr"> 
+          <div style="height:100px; width: 30px; background-color: #e74c3c; position: absolute; top:200px; color: #ffffff; font-weight: bold; left:0px;">
+            <span>F</span>
+            <span>i</span>
+            <span>l</span>
+            <span>t</span>
+            <span>e</span>
+            <span>r</span>
+
+          </div>
+        </a>
+        <div id="sidr" class="sidr left">
+          <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+          </ul>
+        </div>
+    <div id="absolute-wrapper">
+      <img class="image">
+    </div>
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Rosetta
+          <span>Tone</span>
+        </a>
+        <ul class="nav pull-right">
+          <li>
+            <a href="#"><strong>Sign Up</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="heading">Pick a song or
+        <a href="#">start the course</a>
+      </h1>
+    </div>
+    <div class="container container-1 container-2">
+      <a href="/karaoke-child" class="song"><div class="row-fluid">
+        <span class="span3">
+          <img class="image" src="../assets/img/songs/Child.jpg">
+        </span>
+        <span class="span8">
+          <div class="page-header">
+            <h1>Two tigers <small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>Children's Song (1980)</small>
+            </h1>
+          </div>
+          <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+          </span>
+          <span class = "span2">
+            <span class="label label-success pull-right label-success-1">EASY</span>
+          </span>
+        </span>
+      </div></a>
+    </div>
+    <div class="container container-1 container-2">
+      <a href="/karaoke-BSB" class="song"><div class="row-fluid">
+        <span class="span3">
+          <img class="image" src="../assets/img/songs/BSB.jpg">
+        </span>
+        <span class="span8">
+          <div class="page-header">
+            <h1>I want it that way<small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>Back Street Boys (1999)</small>
+            </h1>
+          </div>
+            <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+            </span>
+            <span class = "span2">
+              <span class="label label-success pull-right label-success-2">MEDIUM</span>
+            </span>
+        </span>
+      </div></a>
+    </div>
+    <div class="container container-1 container-2">
+      <a href="/karaoke-Meteor" class="song"><div class="row-fluid">
+        <span class="span3">
+          <img class="image image-1" src="../assets/img/songs/meteor.jpg">
+        </span>
+        <span class="span8">
+          <div class="page-header">
+            <h1>情非得已 <small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>Meteor Garden (2001)</small>
+            </h1>
+          </div>
+          <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+          </span>
+          <span class = "span2">
+            <span class="label label-success pull-right label-success-3">HARD</span>
+          </span>
+        </span>
+      </div></a>
+    </div>
+
+<script>  
+  $(function ()   
+    {$("#simple-menu").sidr();
+  });
+</script>
+
+<script>  
+  $(function ()  
+  { $(".page-header h1 small").popover();  
+  });
+</script>  
+
+  </body>
+
+</html>

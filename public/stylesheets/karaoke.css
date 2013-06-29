@@ -51,9 +51,10 @@ body {
   background: rgba(0, 0, 0, 0) url(../assets/img/TV.jpg) no-repeat 0px 0px;
   background-size: 100%;
   height: 1000px;
+  margin-top:10px;
 }
 .container-1 .container {
-  margin-top: 46px;
+  margin-top:41px;
   background: rgba(9, 9, 9, 0.682353);
   width: 1000px;
   padding: 10px;

@@ -12,7 +12,7 @@
    position: relative;
    width: 980px;
    margin: 0 auto;
-   height: 1px;
+   height: 0px;
  }
  #absolute-wrapper .image {
    width: 0px;
@@ -65,6 +65,7 @@
    color: #fff;
    text-shadow:#000 1px 1px 1px;
    margin-bottom: 6px;
+   margin-top:0px;
    text-align: center;
  }
 
@@ -80,7 +81,8 @@
    width: 300px;
    height: 60px;
    opacity: 1 !important;
-   font-size: 24px;
+   font-size: 26px;
+   padding-top: 20px;
    line-height: 48px;
  }
  .container .row-fluid {

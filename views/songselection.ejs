@@ -11,9 +11,11 @@
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/songselection.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../sidr/stylesheets/jquery.sidr.dark.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="../assets/js/bootstrap-tooltip.js"></script>
     <script type="text/javascript" src="../assets/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="../sidr/jquery.sidr.min.js"></script>
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
@@ -21,6 +23,24 @@
   </head>
   
   <body>
+        <a id="simple-menu" href="#sidr"> 
+          <div style="height:100px; width: 30px; background-color: #e74c3c; position: absolute; top:200px; color: #ffffff; font-weight: bold; left:0px;">
+            <span>F</span>
+            <span>i</span>
+            <span>l</span>
+            <span>t</span>
+            <span>e</span>
+            <span>r</span>
+
+          </div>
+        </a>
+        <div id="sidr" class="sidr left">
+          <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+          </ul>
+        </div>
     <div id="absolute-wrapper">
       <img class="image">
     </div>
@@ -104,13 +124,17 @@
     </div>
 
 <script>  
+  $(function ()   
+    {$("#simple-menu").sidr();
+  });
+</script>
+
+<script>  
   $(function ()  
   { $(".page-header h1 small").popover();  
-  });  
+  });
 </script>  
 
   </body>
-
-
 
 </html>

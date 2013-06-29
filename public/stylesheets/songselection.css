@@ -94,3 +94,17 @@
  .song:hover{
    color:#3498db;
  }
+ .popover {
+    color:#727272;
+    font-size: 16px;
+    font-weight: normal;
+}
+.popover-title{
+   font-weight: bold;
+}
+.span8 .span10{
+   color:#727272;
+}
+.span8 .span10:hover{
+   color:#727272;
+}

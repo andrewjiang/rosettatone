@@ -11,6 +11,9 @@
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/songselection.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap-popover.js"></script>
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
@@ -49,10 +52,15 @@
         </span>
         <span class="span8">
           <div class="page-header">
-            <h1>Feliz Navidad <small><br>José Feliciano (1970)</small>
+            <h1>Feliz Navidad <small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>José Feliciano (1970)</small>
             </h1>
           </div>
-          <span class="label label-success pull-right label-success-1">EASY</span>
+          <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+          </span>
+          <span class = "span2">
+            <span class="label label-success pull-right label-success-1">EASY</span>
+          </span>
         </span>
       </div></a>
     </div>
@@ -63,10 +71,15 @@
         </span>
         <span class="span8">
           <div class="page-header">
-            <h1>Hero <small><br>Enrique Iglesias (2001)</small>
+            <h1>Hero <small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>Enrique Iglesias (2001)</small>
             </h1>
           </div>
-          <span class="label label-success pull-right label-success-2">MEDIUM</span>
+            <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+            </span>
+            <span class = "span2">
+              <span class="label label-success pull-right label-success-2">MEDIUM</span>
+            </span>
         </span>
       </div></a>
     </div>
@@ -77,13 +90,27 @@
         </span>
         <span class="span8">
           <div class="page-header">
-            <h1>Asereje "The Ketchup Song" <small><br>Las Ketchup (2002)</small>
+            <h1>Asereje "The Ketchup Song" <small rel="popover" data-trigger="hover" data-content="Here is some information about the artist. He is a great artist." data-original-title="Artist Bio"><br>Las Ketchup (2002)</small>
             </h1>
           </div>
-          <span class="label label-success pull-right label-success-3">HARD</span>
+          <span class = "span10" style="margin-left:0px">
+              Random information from EchoNest!
+          </span>
+          <span class = "span2">
+            <span class="label label-success pull-right label-success-3">HARD</span>
+          </span>
         </span>
       </div></a>
     </div>
+
+<script>  
+  $(function ()  
+  { $(".page-header h1 small").popover();  
+  });  
+</script>  
+
   </body>
+
+
 
 </html>

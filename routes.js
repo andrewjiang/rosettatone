@@ -8,8 +8,16 @@ exports.yourlang = function(req,res){
 	res.render('yourlang');
 }
 
-exports.yourlang = function(req,res){
+exports.newlang = function(req,res){
 	res.render('newlang');
+}
+
+exports.songselection = function(req,res){
+	res.render('songselection');
+}
+
+exports.karaokehero = function(req,res){
+	res.render('karaoke-hero');
 }
 
 exports.api = function(req,res){

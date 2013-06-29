@@ -13,6 +13,8 @@ app.get('/api/:call', routes.api);
 app.get('/tests', routes.tests);
 app.get('/yourlang',routes.yourlang);
 app.get('/newlang',routes.newlang);
+app.get('/songselection',routes.songselection);
+app.get('/karaoke-hero', routes.karaokehero);
 
 app.listen(3001);
 

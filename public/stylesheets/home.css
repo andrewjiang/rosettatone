@@ -1,6 +1,7 @@
  body {
    padding-left: 0;
    padding-right: 0;
+   background-color: #272727;
  }
  /* This makes absolutely positioned elements like p, h1,
      and some bootstrap elements placed properly. */
@@ -22,19 +23,23 @@
  }
  .navbar {
    height: 60px;
+   background:#E0E0E0;
  }
  .navbar .navbar-inner {
    border: none;
-   background: rgba(236, 240, 241, 0.960784);
+   background-color: #efefef;
    height: 60px;
    padding-left: 20px;
    padding-right: 20px;
+ }
+ .row-fluid{
+   background-color: #ffffff;
  }
  .navbar .navbar-inner .brand {
    font-family:"oswald";
    font-weight: bold;
    font-size: 24px;
-   color: #333333;
+   color: #34495e;
    line-height: 40px;
  }
  .navbar .navbar-inner .brand span {
@@ -44,31 +49,42 @@
    line-height: 40px;
  }
  .container-fluid .container {
-   margin-top: 20px;
-   background: rgba(0, 0, 0, 0) url(../assets/img/source-6.jpg) no-repeat 0px 0px;
+   margin-top: 0px;
+   background: rgba(0, 0, 0, 0) url(../assets/img/travel3.jpg) no-repeat 0px 0px;
    background-size: cover;
-   height: 380px;
+   height: 500px;
  }
  .container-fluid .container .hero-unit {
-   background: rgba(0, 0, 0, 0.639216);
+   background:none;
    margin: 40px;
  }
  .container-fluid .container .hero-unit .heading {
    font-family:"Open Sans";
-   font-weight: normal;
-   font-size: 46px;
-   color: #ffffff;
+   font-weight: bolder;
+   font-size: 56px;
+   color: #fff;
+   text-shadow:#000 1px 1px 1px;
    margin-bottom: 6px;
+   text-align: center;
  }
+
  .container-fluid .container .hero-unit p {
-   color: #e0e0e0;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 28px
  }
  .container-fluid .container .hero-unit .btns .btn-primary {
    background: #3498db;
    border-radius: 0px;
+   width: 300px;
+   height: 60px;
+   opacity: 1 !important;
+   font-size: 24px;
+   line-height: 48px;
  }
  .container .row-fluid {
-   margin: 20px 0px 0px 0px;
+   padding: 40px 0px 100px 0px;
  }
  .container .row-fluid .span4 .icon.icon-flag {
    font-size: 100px;
@@ -104,7 +120,7 @@
    height: 100px;
    width: 100px;
  }
- .container .row-fluid .span4 .icon.icon-cogs {
+ .container .row-fluid .span4 .icon.icon-book {
    font-size: 100px;
    color: #95a5a6;
    height: 100px;

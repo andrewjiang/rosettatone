@@ -127,30 +127,13 @@
   font-size: 64px;
   text-shadow:#000 1px 1px 1px;
  }
-
- #your1{
-   margin-left:0px;
-   border: 2px solid #e0e0e0;
+ #your1:hover, #your2:hover, #your3:hover, #your4:hover, #your5:hover, #your6:hover{
+  opacity: 1;
  }
-  #your2{
+  #your1, #your2, #your3, #your4, #your5, #your6{
    margin-left:0px;
    border: 2px solid #e0e0e0;
- }
-  #your3{
-   margin-left:0px;
-   border: 2px solid #e0e0e0;
- }
-  #your4{
-   margin-left:0px;
-   border: 2px solid #e0e0e0;
- }
-  #your5{
-   margin-left:0px;
-   border: 2px solid #e0e0e0;
- }
-  #your6{
-   margin-left:0px;
-   border: 2px solid #e0e0e0;
+   opacity:0.8;
  }
 #question2{
   font-family:"Droid Sans";

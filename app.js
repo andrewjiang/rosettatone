@@ -15,6 +15,8 @@ app.get('/newlang',routes.newlang);
 app.get('/songselection',routes.songselection);
 app.get('/karaoke-hero', routes.karaokehero);
 app.get('/songselectionCH', routes.songselectionCH);
+app.get('/karaoke-backstreet', routes.karaokebackstreet);
+app.get('/karaoke-feliz', routes.karaokefeliz);
 
 app.listen(3001);
 

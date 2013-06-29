@@ -23,17 +23,24 @@ exports.songselection = function(req,res){
 exports.karaokehero = function(req,res){
 	res.render('karaoke-hero');
 }
+exports.karaokebackstreet = function(req,res){
+	res.render('karaoke-backstreet');
+}
+
+exports.karaokefeliz = function(req,res){
+	res.render('karaoke-feliz');
+}
 
 exports.api = function(req,res){
 	var call = req.params.call;
 	var query = req.query.qs;
 	var echo = echojs({
-  key: process.env.ECHONEST_KEY
+  key: "FHKUDEOWO8PHRQHMT"
 	});
 	console.log(query);
 	switch (call){
 		case 'artist':
-			echo('artist/search').get({
+			echo('artist/biographies').get({
   		name: query
 			}, function (err, json) {
   			res.json(json);

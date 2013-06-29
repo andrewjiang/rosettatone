@@ -13,7 +13,7 @@ var site = {
 		site.getReady(lang1,lang2);
 		site.pauseHandler();		
 		site.callAPI("artist","enrique iglesias").done(function(data){
-			console.log(data);
+			site.displayEcho(data);
 		}); 
 	},
 
@@ -132,6 +132,10 @@ var site = {
 			timerId = window.setTimeout(callback, remaining);
 		}
 		this.resume();
+		},
+
+		displayEcho : function(data){
+				$("#insideTheFloater").html(data)
 		}
 }
 

@@ -116,7 +116,7 @@ o3djs.shader.sendTextFileRequest = function(url, callback) {
   if (request.overrideMimeType) {
     request.overrideMimeType('text/plain');
   }
-  request.open('GET', url, true);
+  request.open('GET', "audio/" + url, true);
   request.onload = callback;
   request.send();
 };

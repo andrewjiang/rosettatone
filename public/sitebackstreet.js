@@ -1,8 +1,9 @@
 var site = {
 	init : function(){
 		paused = false;
-		var lang1 = "[0:04] Quiero ser tu héroe\n[0:12] Si una vez yo pudiera llegar\n[0:19] A erizar de frío tu piel\n[0:25] A quemar que sé yo, tu boca\n[0:32] Y morirme allí despuésn\n[0:38] Y si entonces\n[0:40] Temblaras por mi\n[0:45] Y lloraras al verme sufrir\n[0:50] Y sin dudar tu vida entera dar\n[0:57] Como yo la doy por ti\n[1:04] Si pudiera ser tu héroe\n[1:10] Si pudiera ser tu Dios\n[1:17] Que salvarte a ti mil veces\n[1:22] Puede ser mi salvación\n[1:32] Si supieras\n[1:35] La locura que llevo\n[1:39] Que me hiere\n[1:41] Y me mata por dentro\n[1:44] Y qué más da\n[1:46] Mira que al final\n[1:51] Lo que importa es que te quiero\n[1:58] Si pudiera ser tu héroe\n[2:04] Si pudiera ser tu Dios\n[2:11] Que salvarte a ti mil veces\n[2:16] Puede ser mi salvación\n[2:54] Déjame tocarte, quiero acariciarte\n[3:02] Una vez mas,\n[3:05] Mira que al final\n[3:10] Lo que importa es que te quiero\n[3:17] Si pudiera ser tu héroe\n[3:23] Si pudiera ser tu Dios\n[3:29] Que salvarte a ti mil veces\n[3:35] Puede ser mi salvación\n[3:42] Quiero ser tu héroe\n[3:48] Si pudiera ser tu Dios\n[3:53] Porque salvarte a ti mil veces\n[4:00] Puede ser mi salvación\n[4:06] Puede ser mi salvación\n[4:13] Quiero ser tu héroe..."   
-		var lang2 = "[0:04]I want to be your hero\n[0:12]If one time I could arrive\n[0:19]To remove the cold from your skin\n[0:25]To melt what seals your lips\n[0:32]And die there after\n[0:38] And if you\n[0:40] Tremble for me\n[0:45] And cry when you see me suffer\n[0:50] And without questions give me your entire life\n[0:57] Like I have done for you.\n[1:04] If you'd let me be your hero\n[1:10] If you'd let me be your God\n[1:17] Than saving you a thousand times,\n[1:22] You can be, my salvation.\n[1:32] If you knew\n[1:35] The insanity I carry\n[1:39] That maims,\n[1:41] And kills me inside\n[1:44] But what does it matter?\n[1:46] In the end\n[1:51] What matters is that I love you\n[1:58] If you'd let me be your hero\n[2:04] If you'd let me be your God\n[2:11] Than saving you a thousand times,\n[2:16] you can be, my salvation.\n[2:54] Let me touch you,I wanna caress you\n[3:02] One more time\n[3:05] In the end\n[3:10] what matters is that I love you\n[3:17] If you'd let me be your hero\n[3:23] If you'd let me be your God\n[3:29] Than saving you a thousand times,\n[3:35] You can be, my salvation.\n[3:42] I want to be your hero\n[3:48] If you'd let me be your God\n[3:53] Than saving you a thousand times,\n[4:00] You can be, my salvation.\n[4:06] You can be, my salvation.\n[4:13] I want to be your hero"
+		var lang1 = "[0:01] 你是\n[0:03] 我火\n[0:06] 你是\n[0:09] 我愿望\n[0:11] 相信\n[0:13] 听我说\n[0:16] 我要你那样\n[0:20] 可是\n[0:22] 我们已分开\n[0:24] 你心不明白\n[0:31] 听我说\n[0:35] 我要你那样\n[0:39] 告诉我\n[0:40] 为什们让我心痛\n[0:42] 告诉我\n[0:44] 为什么你不行懂\n[0:48] 告诉我\n[0:49] 我永远不要听你说\n[0:52] 我要你那样\n[0:56] 我是\n[0:58] 你火吗\n[1:01] 你的\n[1:04] 愿望吗\n"
+  
+		var lang2 = var chinese1 = "[0:01] You are\n[0:03] my fire\n[0:06] the one\n[0:09] desire\n[0:11] believe\n[0:13] when I say\n[0:16] I want it that way\n[0:20] but we\n[0:22] are two worlds apart\n[0:24] can't reach to your heart\n[0:31] when I say\n[0:35] I want it that way\n[0:39] tell me why\n[0:40] ain't nothing but a heartache\n[0:42] tell me why\n[0:44] ain't nothing but a mistake\n[0:48] tell me why\n[0:49] I never wanna hear you say\n[0:52] I want it that way\n[0:56] am I\n[0:58] your fire\n[1:01] your one\n[1:04] desire"
 		jQuery("#thePlayer").tubeplayer({
 							  width: 600, // the width of the player
     						height: 450, // the height of the player
@@ -14,7 +15,7 @@ var site = {
 						});
 		site.getReady(lang1,lang2);
 		site.pauseHandler();		
-		site.callAPI("artist","enrique iglesias").done(function(data){
+		site.callAPI("artist","backstreet boys").done(function(data){
 			site.displayEcho(data);
 		}); 
 	},

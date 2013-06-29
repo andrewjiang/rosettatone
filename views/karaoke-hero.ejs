@@ -46,7 +46,7 @@
   div#controls div { display:none; border: 1px solid gray; border-radius: 5px; padding: 10px; width: 728px;}
   div#controls div.display { display: block; }
   #controls { padding-top: 24px;}
-  #effectMix { padding-top: 12px; background-color: #f1c40f; margin-left:60px; margin-right: 60px; border-radius: 6px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px; opacity: 0.7;}
+  #effectMix { padding-top: 12px; background-color: #ecf0f1; margin-left:80px; margin-right: 80px; border-radius: 0px; border: 1px solid #3498db; margin-top:30px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px ;opacity: 1}
 </style>
 
 
@@ -79,39 +79,28 @@
       <div class="container">
         <div id="thePlayer">
         </div>
+        <div id="theFloater" style="height:440px; width:300px; background: #ffffff; opacity: 0.7; position: absolute; top: 20%; right: 20%; border-radius: 6px;">
+        </div>
         <h1 class="heading heading-1 heading-3"><span id="lang1">Spanish Lyrics</span></h1>
         <h1 class="heading heading-1 heading-2"><span id="lang2">English Lyrics</span></h1>
+
+      </div>
         <div class="container-fluid">
-          <div class="well">
+  <div id="effectMix">
             <div class="row-fluid">
               <span class="span1"> <i class="icon icon-caret-left pull-center"></i> 
                 <p>Prev.</p>
               </span>
               <span class="span10">
-                <button id="globalStart">Start Singing!</button>
-                <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;playVideo&quot;)">Start</a>
-                <button id="globalPause">Take a Breather</button>
+                <button class="btn btn-primary" id="globalStart">Start Singing!</button>
+                <button class="btn btn-primary" id="globalPause">Take a Breather</button>
               </span>
               <span class="span1"> <i class="icon icon-caret-right pull-center"></i> 
                 <p>Next</p>
               </span>
             </div>
-          </div>
-        </div>
-      </div>
-      <canvas id="view1" width="750" height="0" style="visibility: hidden; position: fixed; top: 0px; left: 0px"></canvas><br>
-  <canvas id="view2" width="750" height="0" style="visibility: hidden; position: fixed; top: 0px; left: 0px"></canvas>
-  <div style="visibility: hidden">
-    <input type="radio" name="radioSet" value="data" 
-    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_FREQUENCY); analyserView2.setAnalysisType(ANALYSISTYPE_FREQUENCY);">Frequency
-    <input type="radio" name="radioSet" value="data" 
-    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_SONOGRAM); analyserView2.setAnalysisType(ANALYSISTYPE_SONOGRAM);">Sonogram
-    <input type="radio" name="radioSet" value="data" checked="checked" 
-    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_3D_SONOGRAM); analyserView2.setAnalysisType(ANALYSISTYPE_3D_SONOGRAM);">3D Sonogram
-    <input type="radio" name="radioSet" value="data" 
-    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_WAVEFORM); analyserView2.setAnalysisType(ANALYSISTYPE_WAVEFORM);">Waveform
-  </div>
-  <div id="effectMix">Effect: <select id="effect" onchange="changeEffect(this.selectedIndex);">
+
+Effect: <select id="effect" onchange="changeEffect(this.selectedIndex);">
     <option>Delay </option>
     <option>Reverb </option>
     <option>Distortion </option>
@@ -137,6 +126,19 @@ onInput="crossfade( event.target.value );">
 &nbsp;&nbsp;Mono-ize input: <input type="checkbox" checked onchange="toggleMono()">
 <!--          &nbsp;&nbsp;60Hz filter: <input type="checkbox" checked onchange="toggleFilter()"> -->
 </div>
+  <div style="visibility: hidden">
+    <input type="radio" name="radioSet" value="data" 
+    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_FREQUENCY); analyserView2.setAnalysisType(ANALYSISTYPE_FREQUENCY);">Frequency
+    <input type="radio" name="radioSet" value="data" 
+    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_SONOGRAM); analyserView2.setAnalysisType(ANALYSISTYPE_SONOGRAM);">Sonogram
+    <input type="radio" name="radioSet" value="data" checked="checked" 
+    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_3D_SONOGRAM); analyserView2.setAnalysisType(ANALYSISTYPE_3D_SONOGRAM);">3D Sonogram
+    <input type="radio" name="radioSet" value="data" 
+    onmousedown="analyserView1.setAnalysisType(ANALYSISTYPE_WAVEFORM); analyserView2.setAnalysisType(ANALYSISTYPE_WAVEFORM);">Waveform
+  </div>
+      <canvas id="view1" width="750" height="0" style="visibility: hidden; position: fixed; top: 0px; left: 0px"></canvas><br>
+  <canvas id="view2" width="750" height="0" style="visibility: hidden; position: fixed; top: 0px; left: 0px"></canvas>
+
 <div id="controls" style="visibility: hidden">
   <div id="delayControls">A basic digital delay.<br>
     Delay time: <input id="dtime" type="range" min="0.01" max="3" step="0.01" value="0.15" style="height: 20px; width: 200px" onInput="if (dtime) dtime.delayTime.value = event.target.value;"><br>

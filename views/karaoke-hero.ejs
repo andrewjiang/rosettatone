@@ -11,6 +11,9 @@
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/karaoke.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/assets/js/jquery.js"></script>
+    <script src="jQuery.tubeplayer.js"></script>
+    <script src="site.js"></script>
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
@@ -71,9 +74,13 @@
       </div>
     </div>
     <div class="container container-1">
+
+
       <div class="container">
-        <h1 class="heading heading-1 heading-3">Lyrics in the song language goes here...</h1>
-        <h1 class="heading heading-1 heading-2">Lyrics in your language goes here...</h1>
+        <div id="thePlayer">
+        </div>
+        <h1 class="heading heading-1 heading-3"><span id="lang1">Spanish Lyrics</span></h1>
+        <h1 class="heading heading-1 heading-2"><span id="lang2">English Lyrics</span></h1>
         <div class="container-fluid">
           <div class="well">
             <div class="row-fluid">
@@ -81,7 +88,9 @@
                 <p>Prev.</p>
               </span>
               <span class="span10">
-                <h1 class="heading heading-2">Audio player goes here</h1>
+                <button id="globalStart">Start Singing!</button>
+                <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;playVideo&quot;)">Start</a>
+                <button id="globalPause">Take a Breather</button>
               </span>
               <span class="span1"> <i class="icon icon-caret-right pull-center"></i> 
                 <p>Next</p>

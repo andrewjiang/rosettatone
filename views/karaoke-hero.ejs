@@ -11,6 +11,8 @@
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/karaoke.css" media="screen" rel="stylesheet" type="text/css" />
+     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="/assets/js/jquery.js"></script>
     <script src="jQuery.tubeplayer.js"></script>
     <script src="site.js"></script>
@@ -41,12 +43,12 @@
   <script src="../audio/js/visualizer/shader.js"></script>
 
   <style>
-  body { font: 14pt Arial, sans-serif; background: beige; }
+  body { font: 14pt Arial, sans-serif; background: #ffffff; }
   select { font: 14pt Arial, sans-serif; }
   div#controls div { display:none; border: 1px solid gray; border-radius: 5px; padding: 10px; width: 728px;}
   div#controls div.display { display: block; }
   #controls { padding-top: 24px;}
-  #effectMix { padding-top: 12px; background-color: #ecf0f1; margin-left:80px; margin-right: 80px; border-radius: 0px; border: 1px solid #3498db; margin-top:30px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px ;opacity: 1}
+  #effectMix { padding-top: 12px; background-color: #ecf0f1; margin-left:80px; margin-right: 80px; border-radius: 0px; border: 1px solid #3498db; margin-top:30px; padding-left: 30px; padding-right: 0px; padding-bottom: 10px ;opacity: 1}
 </style>
 
 
@@ -88,19 +90,19 @@
         <div class="container-fluid">
   <div id="effectMix">
             <div class="row-fluid">
-              <span class="span1"> <i class="icon icon-caret-left pull-center"></i> 
-                <p>Prev.</p>
+              <a href="#"> <span class="span1"> <i id="prev" class="icon icon-caret-left pull-center"></i> 
+                <p>Prev.</p> </a>
               </span>
-              <span class="span10">
-                <button class="btn btn-primary" id="globalStart">Start Singing!</button>
-                <button class="btn btn-primary" id="globalPause">Take a Breather</button>
+              <span class="span10" style="padding-left:220px; margin-bottom:20px">
+                <button class="btn" id="globalStart">Start Singing!</button>
+                <button class="btn" id="globalPause">Take a Breather</button>
               </span>
-              <span class="span1"> <i class="icon icon-caret-right pull-center"></i> 
-                <p>Next</p>
+               <a href="#"> <span class="span1"> <i id="next" class="icon icon-caret-right pull-center"></i> 
+                <p>Next</p></a>
               </span>
             </div>
 
-Effect: <select id="effect" onchange="changeEffect(this.selectedIndex);">
+Effect: <select id="effect" onchange="changeEffect(this.selectedIndex);" style="height:35px;padding-bottom:6px;">
     <option>Delay </option>
     <option>Reverb </option>
     <option>Distortion </option>
@@ -121,7 +123,7 @@ Effect: <select id="effect" onchange="changeEffect(this.selectedIndex);">
     <option>Wah Bass</option>
     <option>Distorted Wah Chorus</option>
 </select>
-&nbsp;&nbsp;Effect Mix: <input type="range" min="0.0" max="1.0" step="0.01" value="0.4" style="height: 20px; width: 200px;" 
+&nbsp;&nbsp;Effect Mix: <input type="range" min="0.0" max="1.0" step="0.01" value="0.4" style="height: 20px; width: 120px;" 
 onInput="crossfade( event.target.value );">
 &nbsp;&nbsp;Mono-ize input: <input type="checkbox" checked onchange="toggleMono()">
 <!--          &nbsp;&nbsp;60Hz filter: <input type="checkbox" checked onchange="toggleFilter()"> -->

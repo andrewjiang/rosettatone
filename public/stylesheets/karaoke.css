@@ -103,3 +103,29 @@ body {
   width:auto;
   margin-left:0px;
 }
+
+#globalStart{
+   height: 50px;
+   font-family: 'Droid Sans';
+   font-size: 16px;
+   font-weight: bold;
+   margin-left:auto;
+   margin-right:auto;
+}
+#globalPause{
+   height: 50px;
+   font-family: 'Droid Sans';
+   font-size: 16px;
+   font-weight: bold;
+   margin-left:auto;
+   margin-right:auto;
+}
+.icon-caret-right, .icon-caret-left {
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: center;
+}
+#prev,#next {
+  margin-left:15px !important;
+  margin-right:15px !important;
+}

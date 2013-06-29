@@ -8,7 +8,9 @@ var site = {
     						height: 450, // the height of the player
     						allowFullScreen: "true", // true by default, allow user to go full screen
     						initialVideo: "xMtuVP8Mj4o", // the video that is loaded into the player
-    						preferredQuality: "default"// preferred quality: default, small, medium, large, hd720
+    						preferredQuality: "default",
+    						modestbranding: true,
+    						showControls: false	// preferred quality: default, small, medium, large, hd720
 						});
 		site.getReady(lang1,lang2);
 		site.pauseHandler();		
@@ -89,7 +91,7 @@ var site = {
 		var i = 0;
 		function displayLoop() {
 			timer2 = new site.Timer(function(){
-				$("#" + divId).html(array[1][i]);
+				$("#" + divId).html(array[1][i]).fade(500);
 				i++;
 				if (i < array[1].length){displayLoop();}
 			}, getTimeout(i));}

@@ -22,23 +22,22 @@
  }
  .navbar {
    height: 60px;
+   background:#E0E0E0;
  }
  .navbar .navbar-inner {
    border: none;
-   background: rgba(236, 240, 241, 0.960784);
+   background-color: #efefef;
    height: 60px;
    padding-left: 20px;
    padding-right: 20px;
  }
+
  .navbar .navbar-inner .brand {
    font-family:"oswald";
    font-weight: bold;
    font-size: 24px;
-   color: #333333;
+   color: #34495e;
    line-height: 40px;
- }
- .navbar .navbar-inner .brand span {
-   color: #e74c3c;
  }
  .navbar .navbar-inner .nav li a {
    line-height: 40px;
@@ -58,7 +57,7 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-1 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
  .container .row-fluid-1 .span4 .container-fluid-1 .well .row-fluid .span6 .heading {
@@ -69,7 +68,7 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-2 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
  .container .row-fluid-1 .span4 .container-fluid-2 .well .row-fluid .span6 .heading {
@@ -80,7 +79,7 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-3 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
  .container .row-fluid-1 .span4 .container-fluid-3 .well .row-fluid .span6 .heading {
@@ -101,7 +100,7 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-4 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
  .container .row-fluid-1 .span4 .container-fluid.container-fluid-5 {
@@ -109,7 +108,7 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-5 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
  .container .row-fluid-1 .span4 .container-fluid.container-fluid-6 {
@@ -117,39 +116,52 @@
    background-size: 100%;
  }
  .container .row-fluid-1 .span4 .container-fluid-6 .well {
-   background: rgba(245, 245, 245, 0.580392);
+   background: rgba(245, 245, 245, 0);
    margin: 140px 0px 0px 0px;
  }
+
+ .container .row-fluid-1 .well{
+  border:0px;
+  color: #FFF;
+  font-family: "oswald";
+  font-size: 64px;
+  text-shadow:#000 1px 1px 1px;
+ }
+
  #your1{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
   #your2{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
   #your3{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
   #your4{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
   #your5{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
   #your6{
    margin-left:0px;
-   border: 4px solid #e0e0e0;
+   border: 2px solid #e0e0e0;
  }
-#question{
+#question2{
   font-family:"Droid Sans";
   font-weight: normal;
   font-size: 36px;
   text-align: center;
-  color: #34495e;
+  color: #3498db;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.flag{
+  max-width: 70%;
+  padding-right: 10px;
 }
